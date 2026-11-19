@@ -171,22 +171,6 @@ In the protocol: credential status check, operator registration, and a link from
 How was the grant made, and with what assurance?
 In the standard instrument: required elements, signatures, a standalone consent, and an assurance level.
 In the protocol: schema validation, and a consent object that can be hashed and verified on its own.
-These eight came out of the 25 instruments. 1. Who is granting? The principal. For an organization, who signed and under what authority. 2. Who stands behind the agent? A named legal person, the seat it takes, and its acceptance. 3. What may it do? Acts, on what, with whom. To view is not to act; to negotiate is not to conclude. 4. Within what limits? Amounts, counterparties and purpose, as the other side is told them. 5. What comes back to the human? The decisions reserved for the person. 6. When does it start and end? The term, and revocation by notice: who was told, and when. 7. What may the other side rely on? The principal’s own statement, not the agent’s claim about itself. 8. What record exists? Grant, instruction, action and receipt, each tied to the one before. On number 6: authority ends relying party by relying party, as each one gets notice, which makes revocation a distributed-system problem.
-11
-
-WHAT IS GENERIC? · SECOND ANSWER
-Legal facts a protocol should carry: WHAT
-On Behalf Of Whom? · IETF 127
-11
-What may it do, and within what limits?
-In the standard instrument: typed scope (action, object, bounds), with reading, acting and moving money kept separate.
-In the protocol: structured scopes, no wildcards.
-What is off by default, and what can never be granted?
-In the standard instrument: explicit opt-ins, starting with passing authority on, and a list of powers no grant can reach.
-In the protocol: default-deny, step-up for named powers, and a delegation chain the next party can read.
-For what purpose?
-In the standard instrument: purpose stated or chosen from a closed list.
-In the protocol: a purpose code that travels with the request and the data.
 # These 12 came out of the 25 instruments. 
 
 ## Crosswalk:
@@ -314,6 +298,21 @@ The instruments allocate loss among all three parties, and penalties are what ma
 - **Putting it right:** item 10 (recredit and return); item 9 (unauthorized filing ineffective; information statement; termination; ratification); item 25 (rescission window); item 23 (court order to accept).
 - **Sanctions make the rest hold:** item 7 (registry rules without penalties leak); item 9 (small fixed penalties do not deter); item 11 (damages make the format self-enforcing).
 - **Incentives:** items 15 and 25 (whoever is paid per transaction or holds the record has a motive to transact or to take over).
+11
+
+WHAT IS GENERIC? · SECOND ANSWER
+Legal facts a protocol should carry: WHAT
+On Behalf Of Whom? · IETF 127
+11
+What may it do, and within what limits?
+In the standard instrument: typed scope (action, object, bounds), with reading, acting and moving money kept separate.
+In the protocol: structured scopes, no wildcards.
+What is off by default, and what can never be granted?
+In the standard instrument: explicit opt-ins, starting with passing authority on, and a list of powers no grant can reach.
+In the protocol: default-deny, step-up for named powers, and a delegation chain the next party can read.
+For what purpose?
+In the standard instrument: purpose stated or chosen from a closed list.
+In the protocol: a purpose code that travels with the request and the data.
 12
 
 WHAT IS GENERIC? · SECOND ANSWER
@@ -360,5 +359,5 @@ Dazza Greenwood
 CIVICS.com · DazzaGreenwood.com
 On Behalf Of Whom? · IETF 127
 12
-Leave this slide up during questions. My own work, briefly: the study of 25 legal authorization instruments, the survey of 34 agent specifications, and the index of agent integrations. I am early in this and I do not have a specification to propose. I would like to know what this community thinks is the smallest generic thing worth standardizing, and where each of these questions belongs.
+Leave this slide up during questions. My own work, briefly: the study of 25 legal authorization instruments, the survey of 34 agent specifications, and the index of agent integrations. I am early in this and I do not have a specification to propose. I would like to know what this community thinks is the smallest generic thing worth standardizing, and where each of these questions belongs.  Maybe mention Stanford Computational Law AI Agents x Law and delegated authorization research drive event on Dec 16th.
 15
