@@ -1,6 +1,6 @@
 # **Written Agent Authorizations: 25 Instruments, Dissected for AI-Agent Design**
 
-Version 0.3.4 November 14, 2026 · @Dazza Greenwood / with Fable 5.2, Sol 6.1 and Grok 4.7.
+Version 0.4 November 19, 2026 · @Dazza Greenwood / with Fable 5.2, Sol 6.1 and Grok 4.7.
 
 ## **How to read this document**
 
