@@ -359,5 +359,9 @@ Dazza Greenwood
 CIVICS.com · DazzaGreenwood.com
 On Behalf Of Whom? · IETF 127
 12
+Legal Instruments
+What aspects of these examples are useful?  How would a protocol implement a given example?
+12 Questions
+Which of these questions is useful?  How would a protocol answer any of these questions?
 Leave this slide up during questions. My own work, briefly: the study of 25 legal authorization instruments, the survey of 34 agent specifications, and the index of agent integrations. I am early in this and I do not have a specification to propose. I would like to know what this community thinks is the smallest generic thing worth standardizing, and where each of these questions belongs.  Maybe mention Stanford Computational Law AI Agents x Law and delegated authorization research drive event on Dec 16th.
 15
