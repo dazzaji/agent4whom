@@ -2,6 +2,8 @@
 
 *Dazza Greenwood, CIVICS.com* 
 * Supporting research and remarks to the [IEFT San Francisco Meeting, November 20, 2026](https://datatracker.ietf.org/doc/agenda-127-iabopen/)
+* Stanford temporary [project splash page](https://web.stanford.edu/~dazza/) for this research, with link to inquire about staying up to date or getting involved.
+
 
 **Abstract:** AI agents now book hotels, buy goods and read people’s health and bank records, and the first appellate ruling about them turned on a header this community defined: User-Agent. The IETF is building the pieces that let agents be found, hold a dialog, be identified and authorized, and be audited. Yet the question remains: who answers for what the agent does? This talk brings a legal view to that gap. It draws on a study of [25 everyday legal authorization instruments](https://github.com/dazzaji/agent4whom/blob/main/25-legal-instruments.md), a survey of 34 agent specifications and an index of several hundred agent integrations. The research currently holds [12 key questions](https://github.com/dazzaji/agent4whom/blob/main/12-key-questions.md) that suggest which legal facts a protocol should carry to enable more predictable legal results.
 
