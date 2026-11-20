@@ -1,6 +1,6 @@
 # Key Questions for Human and Machine Readable Delegations of Authority to AI Agent Systems
 
-The below questions are primarily derived from Version [0.3.4](https://github.com/dazzaji/agent4whom/commit/24f01911dbba87d225d4dc4c648d9fe01319a57a) of the [25 Instruments](https://github.com/dazzaji/agent4whom/blob/main/25-legal-instruments.md) review. 
+The below questions are primarily derived from Version [0.4](https://github.com/dazzaji/agent4whom/commit/24f01911dbba87d225d4dc4c648d9fe01319a57a) of the [25 Instruments](https://github.com/dazzaji/agent4whom/blob/main/25-legal-instruments.md) review. 
 
 **Who**
 
