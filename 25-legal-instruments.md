@@ -16,7 +16,7 @@ Conventions: U.S. government forms, statutes and regulations are public domain, 
 
 ## **Synthesis: what 25 instruments teach about authorizing AI agents**
 
-The 25 instruments converge on one anatomy, and almost every hard problem in AI-agent authorization — scoping, revocation, counterparty refusal, money movement, sub-delegation — already has a tested answer somewhere in this set. The paper world's best ideas are usually not in the grant clause itself but in the machinery around it: registries, carve-outs, notices, logs and acceptance duties.
+The 25 instruments converge on one anatomy, and almost every hard problem in AI-agent authorization — scoping, revocation, counterparty refusal, money movement, sub-delegation — already has a tested answer somewhere in this set. The paper best ideas are usually not in the grant clause itself but in the machinery around it: registries, carve-outs, notices, logs and acceptance duties.
 
 ### **The recurring anatomy**
 
@@ -33,18 +33,6 @@ The 25 instruments converge on one anatomy, and almost every hard problem in AI-
 11\.  **Execution assurance** — wet ink, notary, witnessed video, e-sign on the counterparty's own surface.  
 12\.  **Liability allocation** — indemnities, statutory damages, reliance protection.
 
-### **Ten design rules for AI-agent authorization**
-
-1\.     **Split read, act, and move-money into separate grants.** IRS 8821 vs. 2848 (item 4), PG\&E information vs. action (item 18), Schwab trade vs. disburse (item 21).  
-2\.     **Make validity a schema.** HIPAA's core elements and defect rules (item 2\) and FERPA's three fields (item 3\) can be checked by machine before anything moves.  
-3\.     **Ban wildcards; default-deny hot powers.** No "all years" at the IRS; "all powers" in a POA still excludes gifts and beneficiary changes (item 23).  
-4\.     **Never let the agent control the payee list or the principal's contact details.** SLOA condition 5 (item 21), IRS line 5b (item 4), VA address-change opt-in (item 7).  
-5\.     **Keep a channel to the principal that the agent cannot capture.** G-28 courtesy copies (item 5), Reg E stop-payment at the bank (item 10), CFPB servicer-may-contact clause (item 19), port-out notices (item 17).  
-6\.     **Put the registry on the counterparty's side and push revocation to it.** CAF, VA POA records, CMRA CRD, the carrier's BOR state machine (item 25). Notice-based revocation (item 14\) shifts risk to the principal.  
-7\.     **Authenticate at use time, not just at grant time.** PS 3801 photo ID at each pickup (item 24); UPOAA § 302 agent certification at presentation (item 23).  
-8\.     **Tier verification by risk, and don't over-verify protective acts.** CCPA lets businesses step up for delete/know but punishes it for opt-outs (item 1).  
-9\.     **Define exclusivity and handoff.** One VA representative at a time (item 7); BOR contest windows (item 25); latest-dated proxy wins (item 22).  
-10\.  **Give counterparties a duty to accept a standard mandate.** UPOAA § 120 and Cal. Prob. Code § 4406 (item 23), plus regulator-published templates such as the CFPB model (item 19), solve the "merchant won't honor my agent" problem.
 
 ### **Pattern map**
 
@@ -75,23 +63,6 @@ The 25 instruments converge on one anatomy, and almost every hard problem in AI-
 | 23 | Statutory POA | Hot powers opt-in; third parties must accept | Default-deny scopes; acceptance duty |
 | 24 | USPS PS 3801 | Standing list of agents; ID at each use | Standing grant \+ runtime authentication |
 | 25 | Insurance BOR | One agent per account; contest window on change | Exclusive grant with two-phase handoff |
-
-### **How this maps to current agent-authorization standards**
-
-•      **OAuth 2.0 Rich Authorization Requests** ([RFC 9396](https://rfc-editor.org/rfc/rfc9396), May 2023\) carries typed authorization\_details objects with actions, locations, datatypes and identifier fields, and its worked example is a payment initiation with amount and creditor. That is the natural container for IRS-style tuples (item 4\) and PG\&E-style checklists (item 18).  
-•      **Google's Agent Payments Protocol (AP2)** ([announcement, Sept. 2025](https://cloud.google.com/blog/ja/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol)) uses a signed "Intent Mandate" (price limits, timing, conditions) for human-not-present purchases and a "Cart Mandate" for exact items and prices. These map closely to Nacha standing authorizations and Reg E range notices (item 10), and the [UCP AP2 extension](https://ucp.dev/draft/specification/payment/extensions/ap2-mandates/) adds merchant-signed terms and mandate-scope-mismatch errors.  
-•      **The IETF On-Behalf-Of draft for AI agents** ([draft-oauth-ai-agents-on-behalf-of-user-02](https://www.ietf.org/archive/id/draft-oauth-ai-agents-on-behalf-of-user-02.html), Aug. 2025\) names the agent in the consent screen and stamps it into the token's act claim — the G-28 idea (item 5\) that the agent's identity is part of the grant.  
-•      **Gaps the paper world already solved that these specs mostly leave open:** a counterparty duty to accept (item 23), closed purpose taxonomies (item 20), exclusivity and contest windows (item 25), sensitive-class opt-ins (item 7), subject-visible disclosure logs (item 3), and payee allowlists the agent cannot edit (item 21).
-
-### **Corrections to the source list**
-
-•      **Item 2:** the HHS reproductive-health model attestation is obsolete; the rule behind it was vacated in *Purl v. HHS* (June 2025).  
-•      **Item 12:** PTO/AIA/81 is the POA to joint inventors, not a Customer Number POA; Customer Number appointment is on AIA/80 and AIA/82B.  
-•      **Item 15:** no "Orange Property Manager" sample PMA could be found online; the C.A.R. PMA sample is used instead.  
-•      **Item 16:** the 2019 customs-broker client-verification rule was never finalized (19 CFR 111.43 is still reserved).  
-•      **Item 21:** the Schwab link in the source list points to a retirement-plan (PCRA) application, not the adviser LPOA.  
-•      **Item 25:** the AmWINS sample BOR letter could not be fetched; CDPHP, PMC and Complete Markets templates are used.  
-•      **Items 8 and 24:** the source list cites PS 3801 under both; item 8 is rebuilt around PS 1583\.
 
 ## **1\. CCPA/CPRA authorized-agent signed permission**
 
